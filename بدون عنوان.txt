@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+include "cs50.h"
+
+
+int main(void)
+{
+    int start_size; 
+    do
+{
+    start_size = get_int("the start size :");
+}
+    while (start_size <9);
+    
+    int end_size;
+    do
+{
+    end_size = get_int("the end size :");
+}
+    while (end_size<srart_size);
+    
+    int years = 0;
+    int n = start_size;
+    int calc = 0;
+   
+    if (start_size == end_size)
+{
+    printf("years: 0");
+} 
+    do
+{
+    n = round(n + (n/3) - (n/4));
+    years += 1;
+}
+    while (n < end_size);
+    printf("years: %i\n", years);
+
+
+}
